@@ -1,0 +1,29 @@
+{% extends "base.html" %}
+
+{% block body %}
+
+<div id="body">
+    <center>
+        <h2>Login</h2>
+        <div class="login-box">
+            <form action="/login" method="POST">
+                <div class="user-box">
+                    <input type="text" name="user" autocomplete="off" placeholder="Enter Username">
+                </div>
+                <div class="user-box">
+                    <input type="password" name="pass" autocomplete="off" placeholder="Enter Password">
+                </div>
+                <div class="submit-but">
+                    <br><br>
+                    <center>
+                        <button type="submit">
+                            Submit
+                        </button>
+                    </center>
+                </div>
+                <br>
+            </form>
+        </div>  
+    </center>
+</div>
+{% endblock %}

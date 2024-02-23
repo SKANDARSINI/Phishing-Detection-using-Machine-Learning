@@ -1,0 +1,143 @@
+/* Global Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #f8f8f8;
+  color: #333;
+}
+
+a {
+  text-decoration: none;
+  color: #3498db; /* Belize Hole */
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: bold;
+  margin: 10px 0;
+}
+
+p {
+  line-height: 1.6;
+  margin: 10px 0;
+}
+
+/* Header Styles */
+#header {
+  height: 60px;
+  background-color: #34495e; /* Midnight Blue */
+  color: #ecf0f1; /* Clouds */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+}
+
+.head {
+  line-height: 40px;
+}
+
+#navigate-to-home, #logout {
+  width: 30%;
+  text-align: center;
+}
+
+#project-name {
+  width: 40%;
+  text-align: center;
+}
+
+#logout-link {
+  color: #ecf0f1;
+  transition: color 0.3s ease;
+}
+
+#logout-link:hover {
+  color: #3498db; /* Belize Hole */
+}
+
+/* Form Styles */
+#body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 90vh;
+}
+
+.login-box {
+  width: 400px;
+  padding: 40px;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  text-align: center;
+}
+
+.login-box h2 {
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.user-box {
+  position: relative;
+}
+
+.user-box input {
+  width: 100%;
+  padding: 15px; /* Increased padding for better visual appearance */
+  font-size: 16px;
+  color: #555;
+  margin-bottom: 20px;
+  border: 1px solid #ddd; /* Add a subtle border */
+  border-radius: 5px; /* Rounded corners */
+  outline: none;
+  transition: border-color 0.3s ease;
+}
+
+.user-box input:focus {
+  border-color: #3498db; /* Highlight border on focus */
+}
+
+.user-box label {
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-size: 16px;
+  color: #3498db;
+  pointer-events: none;
+  transition: all 0.5s ease;
+}
+
+.user-box input:focus ~ label,
+.user-box input:valid ~ label {
+  top: -20px;
+  font-size: 12px;
+  color: #3498db;
+}
+
+.submit-but {
+  margin-top: 30px;
+}
+
+.submit-but button {
+  width: 150px;
+  background-color: #3498db;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.submit-but button:hover {
+  background-color: #2980b9; /* Belize Hole - Darker shade */
+}

@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+
+{% block body %}
+<div id="body" style="display: flex; flex-direction: column; align-items: center; justify-content: center; height: 100vh;">
+    <h1>Webpage Phishing Detection</h1>
+    <br><br><br>
+    <form action="/classification" method="post" style="width: 80%; max-width: 600px; text-align: center;">
+        <input type="text" required placeholder="Enter the URL" name="url" style="width: 100%; padding: 15px; margin-bottom: 20px; border: 1px solid #ccc; border-radius: 8px; box-sizing: border-box;">
+        <br>
+        <input type="submit" value="Predict" style="background-color: #3498db; color: #fff; padding: 15px; border: none; border-radius: 5px; cursor: pointer;">
+    </form>
+    <br>
+    {{ prediction }}
+</div>
+{% endblock %}

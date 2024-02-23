@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+
+{% block body %}
+    <div id="body">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-md-8">
+                    <div class="card">
+                        <div class="card-header">
+                            <h1 class="text-center">Welcome {{ user }}</h1>
+                        </div>
+                        <div class="card-body">
+                            <p class="text-center">Enter the url link of the website to be classified in the below page</p>
+                            <div class="text-center">
+                                <a href="/classification" class="btn btn-primary">Classification of webpage</a>
+                            </div>    
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}

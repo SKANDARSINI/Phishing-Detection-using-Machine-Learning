@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            SecureSurf
+        </title>
+        <meta name="viewport" content="width=device-width,initial-scale=1" />
+        <link rel="stylesheet" href="static/style.css">
+    </head>
+    <body>
+        
+        <div>
+            <div id="header">
+                <div class=head id="project-name">
+                    <a id="logout-link" href="\home"><h2>SecureSurf</h2></a>
+                </div>
+                <div class=head id="logout">
+                    <a id="logout-link" href="\logout"><h3>Logout</h3></a>
+                </div>
+            </div>
+
+            {% block body %}{% endblock %}
+        </div>
+        
+    </body>
+</html>
